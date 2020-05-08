@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="text-centre text-primary">Quiz Time</h1>
+      <h2 class="text-secondary">Time to quiz</h2>
+    </header>
+
+    <div class="container">
+      <p class="default-text">What category would you like?</p>
+
+      <form class="form" action="/submitform" method="post">
+        <label class="row" for="numberOfQuestions">How many questions?</label>
+        <input
+          id="numberOfQuestions"
+          type="number"
+          name="numberOfQuestions"
+          id="numberOfQuestions"
+          step="5"
+        />
+        <label class="row" for="difficulty">Difficulty?</label>
+        <select name="difficulty" id="difficulty">
+          <option value="any">Any</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <label class="row" for="category">Select Category</label>
+        <select name="category" id="category">
+          <option value="any">Any</option>
+          <option value="generalKnowledge">General Knowledge</option>
+          <option value="scienceAndNature">Science And Nature</option>
+          <option value="sports">Sports</option>
+        </select>
+        <input class="submit btn" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
